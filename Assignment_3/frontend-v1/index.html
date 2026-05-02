@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Version 1</title>
+</head>
+
+<body>
+
+    <h1>Version 1</h1>
+
+    <h2>Kubernetes Assignment</h2>
+
+    <button onclick="loadData()">
+        Call Backend
+    </button>
+
+    <p id="output"></p>
+
+
+    <script>
+
+        async function loadData() {
+
+            const response =
+                await fetch("http://backend-service:8000/api")
+
+            const data =
+                await response.json()
+
+            document.getElementById(
+                "output"
+            ).innerHTML = data.message
+        }
+
+    </script>
+
+</body>
+
+</html>
