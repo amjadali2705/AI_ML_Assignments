@@ -1,0 +1,8 @@
+fraudTrain.csv
+fraudTest.csv
+*.zip
+mlruns/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+venv/
